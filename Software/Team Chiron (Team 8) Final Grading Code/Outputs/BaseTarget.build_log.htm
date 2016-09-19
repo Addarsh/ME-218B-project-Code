@@ -1,0 +1,93 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.17.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Addarsh Chandrasekar, ads, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.17
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.17
+Dialog DLL:      DCM.DLL V1.13.4.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+C:\Users\addar\Dropbox\Stanford Acads\ME 218 Project folder\Software\StrategySimulate3.1.2016 FinalGradingCodeToSubmit\StrategySimulate.uvprojx
+Project File Date:  02/29/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'BaseFrameworkTarget'
+compiling FollowLine.c...
+Source\FollowLine.c(449): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                  SpeedReduction = 
+s*Command;
+Source\FollowLine.c(491): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                      if((
+EFT_NOMINAL_DUTY + 
+WM_SCALING*Command+NEUTRAL_DUTY) < LEFT_UPPER_DEADBAND) {
+Source\FollowLine.c(492): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                          Command = 
+EFT_UPPER_DEADBAND - (
+EFT_NOMINAL_DUTY+
+EUTRAL_DUTY + 
+WM_SCALING*Command);
+Source\FollowLine.c(501): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                          LeftInput = (
+EFT_NOMINAL_DUTY+
+WM_SCALING*Command)*Direction+NEUTRAL_DUTY-SpeedReduction;
+Source\FollowLine.c(547): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                                      if(pseudoDistance > 
+OWER_DISTANCE_THRESHOLD && !(pseudoDistance > 0.069 && pseudoDistance < 0.079)) {
+Source\FollowLine.c(547): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                                      if(pseudoDistance > 
+OWER_DISTANCE_THRESHOLD && !(pseudoDistance > 0.069 && pseudoDistance < 0.079)) {
+Source\FollowLine.c(547): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                                      if(pseudoDistance > 
+OWER_DISTANCE_THRESHOLD && !(pseudoDistance > 0.069 && pseudoDistance < 0.079)) {
+Source\FollowLine.c(566): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  									if (AverageProximity > 
+OWER_DISTANCE_THRESHOLD && AverageProximity < DISTANCE_THRESHOLD && LineLostRecovery) {
+Source\FollowLine.c(566): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  									if (AverageProximity > 
+OWER_DISTANCE_THRESHOLD && AverageProximity < 
+ISTANCE_THRESHOLD && LineLostRecovery) {
+Source\FollowLine.c(97): warning:  #177-D: variable "AccumulatedCommand" was declared but never referenced
+  static float AccumulatedCommand = 0;
+Source\FollowLine.c(98): warning:  #177-D: variable "AccumulatedAppendError" was declared but never referenced
+  static float AccumulatedAppendError = 0;
+Source\FollowLine.c: 11 warnings, 0 errors
+compiling Camera.c...
+Source\Camera.c(118): warning:  #550-D: variable "Dummy" was set but never used
+      uint8_t Dummy;
+Source\Camera.c(416): warning:  #177-D: variable "largest_width" was declared but never referenced
+          uint8_t smallest_start, smallest_end, smallest_width=255, largest_width = 0;
+Source\Camera.c(479): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      return LastLineCenter + 
+EFERENCE;
+Source\Camera.c(67): warning:  #550-D: variable "SI_Counter" was set but never used
+  static uint16_t SI_Counter = 0; // Not actually used, but this kills some time
+Source\Camera.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=25448 RO-data=1972 RW-data=308 ZI-data=3060  
+After Build - User command #1: fromelf --bin --output .\Outputs\BaseTarget.bin .\Outputs\BaseTarget.axf
+".\Outputs\BaseTarget.axf" - 0 Error(s), 15 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\addar\Dropbox\Stanford Acads\ME 218 Project folder\Software\StrategySimulate3.1.2016 FinalGradingCodeToSubmit\RTE
+  C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
